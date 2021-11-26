@@ -1,0 +1,42 @@
+.logo {
+    width: 100px;
+    height: 100px;
+    display: inline;
+}
+
+.menu {
+    display: inline;
+    margin-top: auto;
+    margin-left: auto;
+    padding-bottom: 10px;
+}
+
+.button {
+    font-size: large;
+}
+
+.header {
+    padding-left: 30vh;
+    padding-right: 25vh;
+    border-bottom: 2px solid;
+    border-image-slice: 2;
+    position: sticky;
+    top:0;
+    background-color: white;
+    z-index: 500;
+}
+
+.border-gradient-blue {
+    border-image-source: linear-gradient(to left, #4265dd, #27a2f1);
+}
+
+.menu-button{
+    min-width: 100px!important;
+}
+
+.header-data{
+  position: absolute;
+  color:#c9c9c9;
+  top: 0;
+  right:10px;
+}
