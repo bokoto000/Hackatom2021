@@ -3,40 +3,222 @@ const questions = [
         id: '1',
         type: "choose_1",
         question: {
-            text: "What is edishtosi",
-            answers: ['edno', 'dV33333333333333333333333333333222222222e', 'tri32222222222222333333333333333333333333']
+            text: "Do you know how a Nuclear Power Plant operates ?",
+            answers: ['a) Water is boiled, turned into steam, fed to a turbine and electricity is made.', 'b) Electrons in atoms transfer rapidly which creates electricity.','c) Uranium is burned by magnetic furnaces and the heat dissipaited is turned into electricity.']
         },
-        answer: 'edno',
-        nextQuestionOnCorrectAnswer: "2",
-        nextQuestionOnWrongAnswer: "3",
-        wrongAnswerExplained: "Nomer 1",
-        beforeQuestionImage: "https://i.ibb.co/RQswJJj/Picture1.png",
-        afterQuestionImage: "https://e00-marca.uecdn.es/assets/multimedia/imagenes/2019/11/14/15737172127732.jpg"
+        answer: 'a) Water is boiled, turned into steam, fed to a turbine and electricity is made.',
+        nextQuestionOnCorrectAnswer: "2a",
+        nextQuestionOnWrongAnswer: "2b",
+        wrongAnswerExplained: "All nuclear reactors are based on the fission of atomic nuclei. They activate, control and maintain nuclear chain reactions.",
+        beforeQuestionImage: "https://i.ibb.co/DRGBLtx/unnamed.png",
+        afterQuestionImage: "",
     },
     {
-        id: '2',
+        id: '2a',
         type: "choose_1",
         question: {
-            text: "What is dve",
-            answers: ['edno', 'dve', 'tri']
+            text: "Which country produces the most electricity by NPP (Nuclear Power Plant) ?",
+            answers: ['a) Russia', 'b) France', 'c) USA', 'd) China']
         },
-        answer: 'dve',
-        nextQuestionOnCorrectAnswer: "final",
-        nextQuestionOnWrongAnswer: "final",
-        wrongAnswerExplained: "Nomer 2",
+        answer: 'b) France',
+        nextQuestionOnCorrectAnswer: "3a",
+        nextQuestionOnWrongAnswer: "3a",
+        wrongAnswerExplained: "75% of electricity in France is made by Nuclear plants.",
+        beforeQuestionImage: "https://i.ibb.co/nMxxm4J/unnamed.jpg",
+        afterQuestionImage: "https://i.ibb.co/L8VfRGJ/unnamed-1.png",
+        
+    
     },
     {
-        id: '3',
+        id: '2b',
         type: "choose_1",
         question: {
-            text: "What is tri",
-            answers: ['edno', 'dve', 'tri']
+            text: "Compared to the analysis of carbon dioxide emissions in the production of electricity, nuclear reactors are comparable to…",
+            answers: ['a) Renewable sources of energy', 'b) Fossil Fuels']
         },
-        answer: 'tri',
+        answer: 'a) Renewable sources of energy',
+        nextQuestionOnCorrectAnswer: "3b",
+        nextQuestionOnWrongAnswer: "3b",
+        wrongAnswerExplained: "Nuclear energy is comparable with renewable sources by CO2 emissions.",
+        beforeQuestionImage: "https://i.ibb.co/f1ZpwG0/unnamed-2.png",
+        afterQuestionImage: "https://i.ibb.co/h97TxKG/unnamed-3.png"
+    },
+    {
+        id: '3a',
+        type: "choose_1",
+        question: {
+            text: "Is it true that 1 gram enriched Uranium produces the same energy as 1 ton of coal ?",
+            answers: ['a) Yes', 'b) No, that is unbelievable']
+        },
+        answer: 'a) Yes',
+        nextQuestionOnCorrectAnswer: "4a",
+        nextQuestionOnWrongAnswer: "4a",
+        wrongAnswerExplained: "The fission of 1 g of uranium or plutonium per day liberates about 1 MW. This is the energy equivalent of 3 tons of coal or about 600 gallons of fuel oil per day, which when burned produces approximately 1/4 tonne of carbon dioxide.",
+        beforeQuestionImage: "https://i.postimg.cc/tTNQQxwr/unnamed-5.png",
+        afterQuestionImage: "https://i.postimg.cc/6Q1tbnsC/unnamed-6.png",
+        
+    
+    },
+    {
+        id: '3b',
+        type: "choose_1",
+        question: {
+            text: "Which of the following energy types is most commonly associated with low efficiency levels?",
+            answers: ['a) Fossil fuel energy', 'b) Solar power', 'c) Hydro power', 'd) Nuclear power']
+        },
+        answer: 'b) Solar power',
+        nextQuestionOnCorrectAnswer: "4b",
+        nextQuestionOnWrongAnswer: "4b",
+        wrongAnswerExplained: "Solar panels are very difficult to manufacture and maintain. They are also unable to produce energy in most weather conditions and also during nighttime. Because of that their efficiency levels are very low when compared to other energy sources like nuclear or hydro.",
+        beforeQuestionImage: "https://i.postimg.cc/m2VtQdZr/unnamed-5.jpg",
+        afterQuestionImage: "https://i.postimg.cc/sxG1sydH/unnamed-12.png",
+        
+    
+    },
+    {
+        id: '4a',
+        type: "choose_1",
+        question: {
+            text: "What percentage of the total energy produced in the world is derived from fossil fuels?",
+            answers: ['a) 2,6%', 'b) 0,9%', 'c) 35,2%', 'd) 61,3%']
+        },
+        answer: 'd) 61,3%',
+        nextQuestionOnCorrectAnswer: "5a",
+        nextQuestionOnWrongAnswer: "5a",
+        wrongAnswerExplained: "In 2020, 61% of world electricity was generated by fossil fuels, and 35% by the combination of nuclear, hydro, wind and solar. 2020 was the first year that electricity generation from solar surpassed oil.",
+        beforeQuestionImage: "https://i.postimg.cc/XYB92cy0/unnamed-3.jpg",
+        afterQuestionImage: "https://i.postimg.cc/L5y0VBg1/unnamed-9.png",
+        
+    
+    },
+    {
+        id: '4b',
+        type: "choose_1",
+        question: {
+            text: "Which country produces the most power with wind turbines ?",
+            answers: ['a) USA', 'b) China', 'c) Germany', 'd) UK']
+        },
+        answer: 'b) China',
+        nextQuestionOnCorrectAnswer: "5b",
+        nextQuestionOnWrongAnswer: "5b",
+        wrongAnswerExplained: "Belgrade-based Vetroelektrane Balkana (WBEG) consortium inaugurated in Serbia the largest Western Balkan wind power plant, with a capacity of 158 MW.",
+        beforeQuestionImage: "https://i.postimg.cc/zGbsDM4H/unnamed-7.png",
+        afterQuestionImage: "https://i.postimg.cc/tRfNPtkW/unnamed-18.png",
+        
+    
+    },
+    {
+        id: '5a',
+        type: "choose_1",
+        question: {
+            text: "Which type of energy source contributes for more working spaces?",
+            answers: ['a) Renewable energy', 'b) Fossil Fuels']
+        },
+        answer: 'a) Renewable energy',
+        nextQuestionOnCorrectAnswer: "6a",
+        nextQuestionOnWrongAnswer: "6a",
+        wrongAnswerExplained: "Renewable energy jobs outnumber fossil fuel jobs by more than 2.5 to 1.",
+        beforeQuestionImage: "https://i.postimg.cc/BQKW4krL/unnamed-1.jpg",
+        afterQuestionImage: "https://i.postimg.cc/BtWVjZr8/unnamed-2.jpg",
+        
+    
+    },
+    {
+        id: '5b',
+        type: "choose_1",
+        question: {
+            text: "Which of the following sources of energy is not renewable ?",
+            answers: ['a) Geothermal energy', 'b) Solar energy', 'c) Nuclear power', 'd) Tidal energy']
+        },
+        answer: 'c) Nuclear power',
+        nextQuestionOnCorrectAnswer: "6b",
+        nextQuestionOnWrongAnswer: "6b",
+        wrongAnswerExplained: "Although nuclear energy itself is a renewable energy source, the material used in nuclear power plants is not. Nuclear energy harvests the powerful energy in the nucleus, or core, of an atom. Nuclear energy is released through nuclear fission, the process where the nucleus of an atom splits.",
+        beforeQuestionImage: "https://i.postimg.cc/9FF4kPKn/unnamed-8.png",
+        afterQuestionImage: "",
+        
+    
+    },
+    {
+        id: '6a',
+        type: "choose_1",
+        question: {
+            text: "Is it true that certain types of food can be sterilized by radiation treatment ?",
+            answers: ['a) No, food cannot be sterilized.', 'b) Yes, methods like this exist.']
+        },
+        answer: 'b) Yes, methods like this exist.',
+        nextQuestionOnCorrectAnswer: "7a",
+        nextQuestionOnWrongAnswer: "7a",
+        wrongAnswerExplained: "Nonthermal food processing technologies, such as X-ray and electron-beam irradiation, may be used to eliminate pathogens in raw foods, pasteurize delicate food products such as fresh produce, and perform phytosanitary treatment.",
+        beforeQuestionImage: "https://i.postimg.cc/DwsQ5dtb/unnamed-4.jpg",
+        afterQuestionImage: "https://i.postimg.cc/Xq4D0NC4/unnamed-11.png",
+        
+    
+    },
+    {
+        id: '6b',
+        type: "choose_1",
+        question: {
+            text: "Which of the following energy sources is most accessible to the average person ?",
+            answers: ['a) Nuclear energy', 'b) Solar energy', 'c) Wind energy', 'd) Hydro power']
+        },
+        answer: 'b) Solar energy',
+        nextQuestionOnCorrectAnswer: "7b",
+        nextQuestionOnWrongAnswer: "7b",
+        wrongAnswerExplained: "Solar energy is a powerful source of energy that can be used to heat, cool, and light homes and businesses. ",
+        beforeQuestionImage: "https://i.postimg.cc/65zfyLDr/unnamed-6.jpg",
+        afterQuestionImage: "https://i.postimg.cc/P5xzZvjB/unnamed-10.png",
+        
+    
+    },
+    {
+        id: '7a',
+        type: "choose_1",
+        question: {
+            text: "Which of the following energy sources is a cause for high noise levels that can be dangerous for both people and animals ?",
+            answers: ['a) Nuclear energy', 'b) Wind energy', 'c) Fossil fuel energy', 'd) Hydro energy']
+        },
+        answer: 'b) Wind energy',
         nextQuestionOnCorrectAnswer: "final",
         nextQuestionOnWrongAnswer: "final",
-        wrongAnswerExplained: "Nomer 3",
-    }
+        wrongAnswerExplained: "Noise from wind turbines can lead to such symptoms as dizziness, nausea, the sensation of ear pressure, tinnitus, hearing loss, sleeping disorders, headache and other symptoms. Additionally, the term “Wind Turbine Syndrome” has been coined to describe the association of these symptoms to wind turbine noise exposure.",
+        beforeQuestionImage: "https://i.postimg.cc/cH4DJxmm/unnamed-10.jpg",
+        afterQuestionImage: "https://i.postimg.cc/dtCq449F/unnamed-14.png",
+        
+    
+    },
+    {
+        id: '7b',
+        type: "choose_1",
+        question: {
+            text: "Which of the following earth resources is NOT a fossil fuel.",
+            answers: ['a) Coal', 'b) Oil', 'c) Uranium', 'd) Gas']
+        },
+        answer: 'c) Uranium',
+        nextQuestionOnCorrectAnswer: "final",
+        nextQuestionOnWrongAnswer: "final",
+        wrongAnswerExplained: "Uranium is a resource that can be mined from the earth, however when using it to create electricity it is anatomically divided and not burned. Therefore it is not a fossil fuel.",
+        beforeQuestionImage: "https://i.postimg.cc/t4cP6Xpk/unnamed-16.png",
+        afterQuestionImage: "https://i.postimg.cc/7ZWddTnk/unnamed-7.jpg",
+        
+    
+    },
+    {
+        id: 'final',
+        type: "choose_1",
+        question: {
+            text: "",
+            answers: []
+        },
+        answer: 'b)',
+        nextQuestionOnCorrectAnswer: "",
+        nextQuestionOnWrongAnswer: "",
+        wrongAnswerExplained: "",
+        beforeQuestionImage: "https://i.postimg.cc/Jh2c7rHj/unnamed-13.png",
+        afterQuestionImage: "",
+        
+    
+    },
 ]
 
 module.exports = questions;

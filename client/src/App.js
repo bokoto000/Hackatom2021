@@ -22,7 +22,6 @@ function App() {
       if (!id)
         await localStorage.setItem('id', uuid());
       const data = await questionsService.loadAllQuestions();
-      console.log(data.body);
     };
     loadQuestions();
   }, []);

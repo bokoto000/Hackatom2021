@@ -1,18 +1,18 @@
 import superagent from 'superagent';
 
 class QuestionsService {
-    async loadAllQuestions() {
-        const questions = await superagent.get(`http://localhost:5000/questions`);
+    async loadAllQuestions() {    console.log('app', process.env.REACT_APP_SERVER_BASE_URL);
+        const questions = await superagent.get(`${process.env.REACT_APP_SERVER_BASE_URL}/questions`);
         return questions;
     }
 
     async loadQuestion(id) {
-        const question = await superagent.get(`http://localhost:5000/questions/${id}`);
+        const question = await superagent.get(`${process.env.REACT_APP_SERVER_BASE_URL}/questions/${id}`);
         return question.body;
     }
 
     async checkQuestionAnswer(id, answer) {
-        const res = await superagent.post(`http://localhost:5000/questions/check-answer`).send({ questionId: id, user_answer: answer });
+        const res = await superagent.post(`${process.env.REACT_APP_SERVER_BASE_URL}/questions/check-answer`).send({ questionId: id, user_answer: answer });
         return res.body;
     }
 }

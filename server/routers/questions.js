@@ -19,13 +19,11 @@ function saveAnsweredFunction(user, question, table) {
 
 module.exports = () => {
     router.get("/", async (req, res, next) => {
-        console.log('questions');
         const data = removeAnswers(questions);
         res.json({ data });
     });
 
     router.get("/:id", async (req, res, next) => {
-        console.log('questions');
         const question = questions.find(q => q.id === req.params.id);
 
         return res.json(question);

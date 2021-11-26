@@ -37,9 +37,8 @@ function Quiz() {
     }, [currentQuestionId]);
 
     async function answerQuestion(answer) {
-        console.log(answer);
         const res = await questionsService.checkQuestionAnswer(currentQuestionId, answer);
-        console.log('res', res);
+
         if (res.status == 200) {
             setConfetti(true);
             setCorrect(true);
@@ -63,7 +62,6 @@ function Quiz() {
         setCorrect(false);
     }
 
-    console.log(currentQuestion);
     return (
         <div style={{ alignItems: 'center' }}>
             {confetti ?

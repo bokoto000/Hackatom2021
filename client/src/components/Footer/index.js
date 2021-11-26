@@ -11,6 +11,8 @@ export default function Footer() {
                 }}
             />
             Made for HACKATOM 2021.
+            <br />
+            <a href='https://github.com/bokoto000/Hackatom2021'>https://github.com/bokoto000/Hackatom2021</a>
         </div>
     )
 }
