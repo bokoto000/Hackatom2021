@@ -89,6 +89,9 @@ function Quiz() {
                         {currentQuestion.wrongAnswerExplained}</Alert> :
                     null
             }
+            {currentQuestion && nextQuestionButtonVisible && currentQuestion.afterQuestionImage ?
+                <img src={currentQuestion.afterQuestionImage} style={{ marginLeft: 'auto', marginRight: 'auto', display: "block", marginTop: '30px' }} /> : null
+            }
             <div style={{ marginLeft: 'auto', marginRight: 'auto', width: '200px', marginTop: '10px' }}>
                 {nextQuestionButtonVisible ?
                     <Button
